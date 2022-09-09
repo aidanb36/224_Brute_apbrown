@@ -77,18 +77,23 @@ public class Main {
     // implement this
     ArrayList<boolean[]> rtnval = new ArrayList<boolean[]>();
     if(n==0){
-      boolean newbie[] = new boolean[0];
+      boolean[] newbie = new boolean[n];
       rtnval.add(newbie);
     }
     else{
       ArrayList<boolean[]> sublist =permute(n-1);
       for (int e = 0; e<sublist.size(); e++){
         boolean[] a1 = new boolean[n];
-        a1[e] = sublist[e];
+        a1 = sublist.get(e);
+        a1[n-1] = true;
+        rtnval.add(a1);
+        boolean[] a2 = new boolean[n];
+        a2 = sublist.get(e);
+        a2[n-1] = false;
+        rtnval.add(a2);
       }
-      return rtnval;
     }
-    
+    return rtnval;
   }
 }
 
