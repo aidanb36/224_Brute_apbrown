@@ -67,8 +67,7 @@ public class Main {
 
   public static Instructor[] findMinCover(String[] courses, Instructor[] instructors) {
     // implement this
-    // ArrayList<boolean[]>rtnval;
-    // if()
+    
   }
 
   //-----------------------------------------------------------------------
@@ -81,7 +80,7 @@ public class Main {
       rtnval.add(newbie);
     }
     else{
-      ArrayList<boolean[]> sublist =permute(n-1);
+      ArrayList<boolean[]> sublist = permute(n-1);
       for (int e = 0; e<sublist.size(); e++){
         boolean[] a1 = new boolean[n];
         a1 = sublist.get(e);
