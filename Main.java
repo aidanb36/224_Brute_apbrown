@@ -55,19 +55,23 @@ public class Main {
   // Hiram: ART001 ART110 ART125
   // Ralph: ART008 ART064 ART205 ART266
 
-  public static void testTwo() {
-    // fill this in
+  // public static void testTwo() {
+  //   // fill this in
 
-    Instructor[] coverSet = findMinCover(courses, instructors);
-    for (int i=0; i<coverSet.length; ++i)
-      System.out.println(coverSet[i]);
-  }
+  //   Instructor[] coverSet = findMinCover(courses, instructors);
+  //   for (int i=0; i<coverSet.length; ++i)
+  //     System.out.println(coverSet[i]);
+  // }
 
   //-----------------------------------------------------------------------
 
   public static Instructor[] findMinCover(String[] courses, Instructor[] instructors) {
     // implement this
-    
+    Instructor[] newbie = new Instructor[0];
+      for(int i = 0; i<instructors.length; i++){
+        System.out.print(courses[i]);
+      }
+      return newbie;
   }
 
   //-----------------------------------------------------------------------
