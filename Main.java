@@ -69,7 +69,7 @@ public class Main {
     // implement this
     Instructor[] newbie = new Instructor[0];
       for(int i = 0; i<instructors.length; i++){
-        System.out.print(courses[i]);
+        System.out.print(instructors[i]);
       }
       return newbie;
   }
@@ -80,12 +80,12 @@ public class Main {
     // implement this
     ArrayList<boolean[]> rtnval = new ArrayList<boolean[]>();
     if(n==0){
-      boolean[] newbie = new boolean[n];
+      boolean[] newbie = new boolean[0];
       rtnval.add(newbie);
     }
     else{
       ArrayList<boolean[]> sublist = permute(n-1);
-      for (int e = 0; e<sublist.size(); e++){
+      for (int e = 0; e<sublist.size(); ++e){
         boolean[] a1 = new boolean[n];
         a1 = sublist.get(e);
         a1[n-1] = true;
